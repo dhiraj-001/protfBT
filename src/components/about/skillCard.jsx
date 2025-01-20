@@ -19,13 +19,13 @@ function SkillCard({ title, skill }) {
       >
         {title}
       </motion.h3>
-      {!isOpen && (
+      {/* {!isOpen && (
         <img
           src={img1}
           alt=""
           className="h-52 flex justify-center align-middle"
         />
-      )}
+      )} */}
       {isOpen && (
         <motion.div
           className="experience__content"
@@ -36,9 +36,9 @@ function SkillCard({ title, skill }) {
         >
           {skill.map((skil, i) => (
             <article className="experience__details " key={i}>
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <BsFillPatchCheckFill values={{color:"blue"}} className="experience__details-icon" />
               <div>
-                <h4 className="text-[#321e39] font-bodyFont text-lg">{skil}</h4>
+                <h4 className="text-[#321e39] font-bodyFont font-bold text-lg">{skil}</h4>
               </div>
             </article>
           ))}

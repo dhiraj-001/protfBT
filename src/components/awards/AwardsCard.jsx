@@ -15,11 +15,7 @@ const AwardsCard = () => {
           </div>
         </div>
         <svg id="curve">
-          <path
-            id="p"
-            d="M0,200 Q80,100 400,200 V150 H0 V50"
-            transform="translate(0 300)"
-          />
+         
           <rect
             id="dummyRect"
             x="0"

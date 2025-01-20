@@ -43,9 +43,11 @@ const Navbar = () => {
           <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-[-20px] bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
-                <img className="w-32" src={logo} alt="logo" />
+                <span className="w-32 text-bodyColor font-bold text-lg"  >Bhumika Tewari</span>
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum soluta perspiciatis molestias enim cum repellat, magnam exercitationem distinctio aliquid nam.
+                As a multifaceted professional, I bring together technical expertise,
+          creative vision, and a drive for excellence to deliver high-impact
+          solutions.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -54,7 +56,7 @@ const Navbar = () => {
                     key={item._id}
                     className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
                   >
-                    <Link
+                    <NavLink
                       onClick={() => setShowMenu(false)}
                       activeClass="active"
                       to={item.link}
@@ -64,7 +66,7 @@ const Navbar = () => {
                       duration={500}
                     >
                       {item.title}
-                    </Link>
+                    </NavLink>
                   </li>
                 ))}
               </ul>
@@ -73,15 +75,18 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
-                  <span className="bannerIcon">
+                  <span className="bannerIcon shadow-lg">
                     <FaFacebookF />
                   </span>
-                  <span className="bannerIcon">
+                  <span className="bannerIcon shadow-lg">
                     <FaTwitter />
                   </span>
-                  <span className="bannerIcon">
+                  <a target='#' href="https://www.linkedin.com/in/bhumika-tewari-21294027a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <span className="bannerIcon shadow-lg">
                     <FaLinkedinIn />
                   </span>
+                  </a>
+                  
                 </div>
               </div>
               <span

@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import ResumeCard from '../resume/ResumeCard';
 import Navbar from '../navbar/Navbar';
-
+import { education } from '../../data/edu';
 const Education = () => {
   const firstTextVariant = {
     initial: {
@@ -37,25 +37,23 @@ const Education = () => {
           
           <h2 className="text-3xl md:text-4xl text-[#263d4c] font-bold">Education Quality</h2>
         </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[700px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="BSc in Computer Science"
-            subTitle="University of DVI (2006 - 2010)"
-            result="3.90/4"
-            des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
-          />
-          <ResumeCard
-            title="AS - Science & Information"
-            subTitle="SuperKing College (2001 - 2005)"
-            result="4.75/5"
-            des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
-          />
-          <ResumeCard
-            title="Secondary School Education"
-            subTitle="Kingstar Secondary School (1998 - 2000)"
-            result="5.00/5"
-            des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
-          />
+        <div className="mt-6 lgl:mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+          {
+education.map((edu,i)=>{
+  return(
+    <ResumeCard
+    key={i}
+    title={edu.title}
+    subTitle={edu.subTitle}
+    result={edu.result}
+    des={edu.des}
+  />
+  )
+})
+          }
+          
+         
+        
         </div>
       </div>
      
