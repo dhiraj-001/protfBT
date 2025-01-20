@@ -12,7 +12,7 @@ const Awards = () => {
       id="media-coverage"
       className="w-full py-20 border-b-[1px] border-b-black flex items-center flex-col gap-9"
     >
-      <div className="flex flex-col gap-8">
+      {/* <div className="flex flex-col gap-8">
         <div className="">
         <div className="flex justify-center items-center text-center">
           <Title title="" des="Awards And Honors" />
@@ -34,7 +34,7 @@ const Awards = () => {
             </div>
           </button>
         </NavLink>
-      
+       */}
     </section>
   );
 };

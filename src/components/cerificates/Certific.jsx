@@ -1,65 +1,29 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Typography,
-  Tooltip,
-} from "@material-tailwind/react";
- 
-export function Certific() {
+import React from "react";
+import Title from "../layouts/Title";
+import AwardsCard from "./AwardsCard";
+import { certi } from "../../data/certi";
+function Certific() {
   return (
-    <div>
-      <Card className="w-96">
-      <CardHeader floated={false} className="h-80">
-        <img src="https://docs.material-tailwind.com/img/team-3.jpg" alt="profile-picture" />
-      </CardHeader>
-      <CardBody className="text-center">
-        <Typography variant="h4" color="blue-gray" className="mb-2">
-          Natalie Paisley
-        </Typography>
-        <Typography color="blue-gray" className="font-medium" textGradient>
-          CEO / Co-Founder
-        </Typography>
-      </CardBody>
-      <CardFooter className="flex justify-center gap-7 pt-2">
-        <Tooltip content="Like">
-          <Typography
-            as="a"
-            href="#facebook"
-            variant="lead"
-            color="blue"
-            textGradient
-          >
-            <i className="fab fa-facebook" />
-          </Typography>
-        </Tooltip>
-        <Tooltip content="Follow">
-          <Typography
-            as="a"
-            href="#twitter"
-            variant="lead"
-            color="light-blue"
-            textGradient
-          >
-            <i className="fab fa-twitter" />
-          </Typography>
-        </Tooltip>
-        <Tooltip content="Follow">
-          <Typography
-            as="a"
-            href="#instagram"
-            variant="lead"
-            color="purple"
-            textGradient
-          >
-            <i className="fab fa-instagram" />
-          </Typography>
-        </Tooltip>
-      </CardFooter>
-    </Card>
-  
-    </div>
-    
+    <section
+      id="features"
+      className="w-full py-20 border-b-[1px] border-b-black"
+    >
+      <Title title="" des="Certificates" />
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
+        {certi.map((val, i) => {
+          return(
+             <AwardsCard key={i}
+            title={val.head}
+            des={val.des}
+            time={val.issue}
+            link={val.link}
+          />
+          )
+         
+        })}
+      </div>
+    </section>
   );
 }
+
+export default Certific;

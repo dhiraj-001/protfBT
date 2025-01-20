@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import  logo  from "../../assets/images/logo.png";
-import { navLinksdata } from '../../constants/index';
-import { NavLink } from 'react-router-dom';
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaGithub,
+  FaInstagram,
+} from "react-icons/fa";
+import logo from "../../assets/images/logo.png";
+import { navLinksdata } from "../../constants/index";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-transparent xl:bg-bodyColor mx-auto flex xl:justify-around justify-end items-center font-titleFont xl:border-b-[1px] xl:border-b-gray-600">
-   
       <div>
         <ul className="hidden xl:inline-flex items-center gap-6 lg:gap-10">
           {navLinksdata.map(({ _id, title, link }) => (
@@ -43,11 +48,13 @@ const Navbar = () => {
           <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-[-20px] bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
-                <span className="w-32 text-bodyColor font-bold text-lg"  >Bhumika Tewari</span>
+                <span className="w-32 text-bodyColor font-bold text-lg">
+                  Bhumika Tewari
+                </span>
                 <p className="text-sm text-gray-400 mt-2">
-                As a multifaceted professional, I bring together technical expertise,
-          creative vision, and a drive for excellence to deliver high-impact
-          solutions.
+                  As a multifaceted professional, I bring together technical
+                  expertise, creative vision, and a drive for excellence to
+                  deliver high-impact solutions.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -75,18 +82,27 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
-                  <span className="bannerIcon shadow-lg">
-                    <FaFacebookF />
-                  </span>
-                  <span className="bannerIcon shadow-lg">
-                    <FaTwitter />
-                  </span>
-                  <a target='#' href="https://www.linkedin.com/in/bhumika-tewari-21294027a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                    <span className="bannerIcon shadow-lg">
-                    <FaLinkedinIn />
-                  </span>
+                  <a target="#" href="https://github.com/Bhumika2006-hue">
+                    <span className="bannerIcon">
+                      <FaGithub />
+                    </span>
                   </a>
-                  
+                  <a
+                    target="#"
+                    href="https://www.instagram.com/im_stbhumika?igsh=cHJ3bGNkNWtheGI5"
+                  >
+                    <span className="bannerIcon">
+                      <FaInstagram />
+                    </span>
+                  </a>
+                  <a
+                    target="#"
+                    href="https://www.linkedin.com/in/bhumika-tewari-21294027a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  >
+                    <span className="bannerIcon shadow-lg">
+                      <FaLinkedinIn />
+                    </span>
+                  </a>
                 </div>
               </div>
               <span

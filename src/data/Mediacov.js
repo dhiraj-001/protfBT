@@ -1,7 +1,7 @@
 import bk1 from "../assets/images/article1.png"
+import bk2 from "../assets/images/article2.png"
 
 export const mediaCov = [
-
   {
     img: "https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20230529130300.jpg",
     headline: "The 7 Inspiring Visionaries Who Inspired the World",
@@ -98,5 +98,10 @@ export const mediaCov = [
     des: "Read the beautiful poem 'Let's Explore Us' by Bhumika Tewari...",
     link: "https://storymirror.com/read/english/poem/let-s-explore-us/cb96tal5",
   },
+  {
+    img: bk2,
+    headline: "Bhumika Tewari and Her Mother Kaberi Tewari Get The Blue Dolphin Award",
+    des: "Learn about their recognition by The Eagle Eye Magazine...",
+    link: "https://www.instagram.com/p/CtDp3YDpJlA/?img_index=1",
+  }
 ];
-

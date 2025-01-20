@@ -61,7 +61,7 @@ const Experience = () => {
         className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
       >
         <div className="py-6 mt-20 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <h2 className="text-4xl text-[#263d4c] font-bold">Extra Activites</h2>
+          <h2 className="text-4xl text-[#263d4c] font-bold">Extracurricular Activites</h2>
         </div>
         <div className="mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           {exp3.map((exp, i) => {

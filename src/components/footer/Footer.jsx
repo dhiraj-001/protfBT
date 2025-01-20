@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 import logo from "../../assets/images/logo.png"
 const Footer = () => {
   return (
@@ -7,12 +7,19 @@ const Footer = () => {
       <div className="w-full h-full flex flex-col gap-8">
         
         <div className="flex gap-4">
-          <span className="bannerIcon">
-            <FaFacebookF />
-          </span>
-          <span className="bannerIcon">
-            <FaInstagram />
-          </span>
+        <a target="#" href="https://github.com/Bhumika2006-hue">
+                    <span className="bannerIcon">
+                      <FaGithub />
+                    </span>
+                  </a>
+         <a
+                     target="#"
+                     href="https://www.instagram.com/im_stbhumika?igsh=cHJ3bGNkNWtheGI5"
+                   >
+                     <span className="bannerIcon">
+                       <FaInstagram />
+                     </span>
+                   </a>
           <a href="https://www.linkedin.com/in/bhumika-tewari-21294027a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="#" >
           <span className="bannerIcon">
             <FaLinkedinIn />

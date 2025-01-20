@@ -35,7 +35,7 @@ const Education = () => {
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           
-          <h2 className="text-3xl md:text-4xl text-[#263d4c] font-bold">Education Quality</h2>
+          <h2 className="text-3xl md:text-4xl text-[#263d4c] font-bold">Education </h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           {

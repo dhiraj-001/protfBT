@@ -11,7 +11,7 @@ export const navLinksdata = [
   },
   {
     _id: 1003,
-    title: "skills",
+    title: "Skills",
     link: "skills",
   },
   {
@@ -51,7 +51,7 @@ export const navLinksdata = [
   },
   {
     _id: 1011,
-    title: "Awards",
+    title: "Achievements",
     link: "awards",
   },
   {
