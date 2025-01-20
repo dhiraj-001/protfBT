@@ -9,7 +9,7 @@ function SkillCard({ title, skill }) {
   return (
     <motion.div
       layout
-      transition={{ layout: { duration: 1, type: "spring" } }}
+      transition={{ layout: { duration: 1.5, type: "spring" } }}
       className="experience__frontend w-[90%] cursor-pointer rounded-md bg-slate-400"
       onClick={() => setOpen(!isOpen)}
     >

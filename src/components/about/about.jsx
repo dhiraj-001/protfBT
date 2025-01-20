@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../layouts/Title";
-import Skills from "./skills";
+
+import Skill1 from "./skills1";
 
 function About() {
   return (
@@ -22,7 +23,7 @@ function About() {
           IT), I'm committed to lifelong learning, driving innovation, and
           delivering impactful results that make a meaningful difference.
         </p>
-        <Skills></Skills>
+        <Skill1/>
     
     </section>
   );

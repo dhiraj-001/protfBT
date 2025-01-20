@@ -1,0 +1,83 @@
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 290px;
+  height: 360px;
+  transition: .5s;
+}
+.swiper:hover {
+  width: 300px;
+  height: 380px;
+}
+@media only screen and (min-width: 600px) {
+  .swiper {
+    width: 340px;
+    height: 400px;
+  }
+  .swiper:hover {
+    width: 370px;
+    height: 450px;
+  }
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+.bg-b1{
+  background: rgb(142,138,218);
+background: linear-gradient(45deg, rgba(142,138,218,1) 0%, rgba(80,37,106,1) 100%);
+}
+.bg-b2{
+  background: rgb(123, 119, 187);
+background: linear-gradient(45deg, rgb(101, 97, 184) 0%, rgb(5, 103, 136) 100%);
+}
+.bg-b3{
+  background: rgb(142,138,218);
+background: linear-gradient(45deg, rgb(73, 67, 184) 0%, rgb(151, 208, 146) 100%);
+}.bg-b4{
+  background: rgb(142,138,218);
+background: linear-gradient(45deg, rgb(155, 111, 174) 0%, rgb(119, 56, 158) 100%);
+}.bg-b5{
+  background: rgb(142,138,218);
+background: linear-gradient(45deg, rgba(142,138,218,1) 0%, rgba(80,37,106,1) 100%);
+}

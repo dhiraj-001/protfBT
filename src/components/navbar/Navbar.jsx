@@ -4,22 +4,23 @@ import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import  logo  from "../../assets/images/logo.png";
-import { navLinksdata } from '../../constants';
+import { navLinksdata } from '../../constants/index';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="w-full h-24 sticky top-0 z-50 bg-transparent mdl:bg-bodyColor mx-auto flex mdl:justify-around justify-end items-center font-titleFont mdl:border-b-[1px] mdl:border-b-gray-600">
+    <div className="w-full h-24 sticky top-0 z-50 bg-transparent xl:bg-bodyColor mx-auto flex xl:justify-around justify-end items-center font-titleFont xl:border-b-[1px] xl:border-b-gray-600">
    
       <div>
-        <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
+        <ul className="hidden xl:inline-flex items-center gap-6 lg:gap-10">
           {navLinksdata.map(({ _id, title, link }) => (
             <li
               className="text-base font-normal text-navtxt tracking-wide cursor-pointer hover:text-designColor duration-300"
               key={_id}
             >
-              <Link
+              <NavLink
                 activeClass="active"
                 to={link}
                 spy={true}
@@ -28,13 +29,13 @@ const Navbar = () => {
                 duration={500}
               >
                 {title}
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>
         <span
           onClick={() => setShowMenu(!showMenu)}
-          className="text-xl mdl:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
+          className="text-xl xl:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
         >
           <FiMenu />
         </span>

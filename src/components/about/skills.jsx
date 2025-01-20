@@ -1,42 +1,29 @@
-import React, { useState } from "react";
-import { BsFillPatchCheckFill } from "react-icons/bs";
-import Title from "../layouts/Title";
+import React from "react";
+import Title from "../layouts/Title"; // Ensure the correct path to the SkillCard component
 import "./skills.css";
 import { skills } from "../../data/skills"; // Ensure the correct path to the skills data
 import SkillCard from "./skillCard";
-import { motion } from "framer-motion";
 
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 const Skills = () => {
-  const [showAll, setShowAll] = useState(false);
-
-  const toggleShowAll = () => {
-    setShowAll(!showAll);
-  };
-
   return (
-    <motion.section id="experience"
-    
-    className="mt-10">
-      <Title title="" des="My Skills" />
-
+    <section id="experience" className="mt-10">
+      {" "}
+      <Title title="" des="My Skills" />{" "}
       <div className="container experience__container">
-        {skills
-          .slice(0, showAll ? skills.length : 2)
-          .map((skillCategory, i) => (
-            <SkillCard
-              key={i}
-              title={skillCategory.title}
-              skill={skillCategory.skill}
-            />
-          ))}
-        {/* End of frontend part */}
-      </div>
-
-      <button onClick={toggleShowAll} className="see-more-button">
-        {showAll ? "See Less" : "All Skills"}
-      </button>
-    </motion.section>
+        {" "}
+        {skills.map((skillCategory, i) => (
+          <SkillCard
+            key={i}
+            title={skillCategory.title}
+            skill={skillCategory.skill}
+          />
+        ))}{" "}
+        {/* End of frontend part */}{" "}
+      </div>{" "}
+    </section>
   );
 };
-
 export default Skills;
