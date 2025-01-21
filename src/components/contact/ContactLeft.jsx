@@ -19,10 +19,10 @@ const ContactLeft = () => {
         As a multifaceted professional, I bring together technical expertise, creative vision, and a drive for excellence to deliver high-impact solutions with over 3 years of experience
         </p>
         <p className="text-base text-gray-300 flex items-center gap-2">
-          Phone: <span className="text-gray-100">+968 97859628</span>
+          Phone: <span className="text-gray-100">+91 8420399560</span>
         </p>
         <p className="text-base text-gray-300 flex items-center gap-2">
-          Email: <span className="text-gray-100">noor.jsdivs@gmail.com</span>
+          Email: <span className="text-gray-100">bhumikatewariit@gmail.com</span>
         </p>
       </div>
       <div className="flex flex-col gap-4">

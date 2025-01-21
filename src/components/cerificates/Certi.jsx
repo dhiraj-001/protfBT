@@ -30,7 +30,7 @@ export default function Certi() {
   return (
     <>
       <div className="flex justify-center items-center text-center">
-        <Title title="" des="My Certificates" />
+        <Title title="" des="Certifications" />
       </div>
 
       <div className="flex items-end gap-9 flex-col">
