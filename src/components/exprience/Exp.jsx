@@ -21,7 +21,7 @@ export default function Exp() {
       <div className="mt-11">
         <Title title="" des="Work Exprience" />
       </div>
-      <div className="flex flex-col items-end gap-16">
+      <div className="flex flex-col overflow-hidden items-end gap-16">
         <Swiper
           effect={"cards"}
           grabCursor={true}

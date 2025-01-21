@@ -26,8 +26,8 @@ function Skill1() {
   const row2 = [aws, mongodb, sql, python, java, jquery, docker, postman];
 
   return (
-    <div className="flex items-center mdl:items-end gap-14 flex-col" id="skills">
-      <AppContainer className=" lg:flex w-[90vw] mdl:w-auto mt-24">
+    <div className="flex items-center overflow-hidden mdl:items-end gap-14 flex-col" id="skills">
+      <AppContainer className=" lg:flex w-[100vw] mdl:w-auto mt-24">
         <Wrapper className=" overflow-hidden">
           <Title title="" des="My Skills" />
 
