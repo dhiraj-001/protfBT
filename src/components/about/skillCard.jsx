@@ -3,6 +3,7 @@ import { BsFillPatchCheckFill } from "react-icons/bs";
 import "./skills.css";
 import { motion } from "framer-motion";
 import img1 from "../../assets/images/pngwing.com.png";
+import { FaDotCircle } from "react-icons/fa";
 function SkillCard({ title, skill }) {
   const [isOpen, setOpen] = useState(false);
 
@@ -36,7 +37,8 @@ function SkillCard({ title, skill }) {
         >
           {skill.map((skil, i) => (
             <article className="experience__details " key={i}>
-              <BsFillPatchCheckFill values={{color:"blue"}} className="experience__details-icon" />
+              <BsFillPatchCheckFill values={{color:"blue"}} className="hidden md:block experience__details-icon" />
+             
               <div>
                 <h4 className="text-[#321e39] font-bodyFont font-bold text-lg">{skil}</h4>
               </div>
