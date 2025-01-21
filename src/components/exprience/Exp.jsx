@@ -26,7 +26,7 @@ export default function Exp() {
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="mySwiper mt-20"
+          className="mySwiper mt-20 w-[300px] mdl:w-[600px] lg-[900px]"
         >
           {
             exp.map((exp,i)=>{
