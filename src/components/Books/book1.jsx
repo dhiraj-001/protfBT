@@ -20,9 +20,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import {books} from "../../data/books"
 function Book1() {
-  const row1 = [html, css1, js, cpp, c, angular, bootstrap];
 
-  const row2 = [aws, mongodb, sql, python, java, jquery, docker, postman];
 
   return (
     <div className="flex items-end gap-14 flex-col" id="books">
@@ -33,7 +31,7 @@ function Book1() {
           <Marquee>
             <MarqueeGroup>
               {books.map((el, index) => (
-                 <div className="w-full h-52 bg-opacity-20 border-2 bg-[#3665dc] border-[#91b0e68a] hover:bg-opacity-30 duration-300 rounded-lg shadow-shadowOne p-4 lgl:px-10 flex flex-col justify-start gap-5 lgl:gap-3 pt-9">
+                 <div key={index} className=" h-52 bg-opacity-20 border-2 bg-[#3665dc] border-[#91b0e68a] hover:bg-opacity-30 duration-300 rounded-lg shadow-shadowOne p-4 lgl:px-10 flex flex-col justify-start gap-5 lgl:gap-3 pt-9">
                  <div className="flex flex-col lgl:flex-row justify-between gap-4 lgl:gap-0 lgl:items-center">
                    <div>
                      <h3 className="text-xl text-designColor md:text-2xl font-semibold group-hover:text-white duration-300">
@@ -42,7 +40,7 @@ function Book1() {
                      
                    </div>
                  </div>
-                 <p className="text-sm md:text-base font-medium text-[#1d1332] group-hover:text-gray-300 duration-300">
+                 <p className="text-sm  md:text-base font-medium text-[#1d1332] group-hover:text-gray-300 duration-300">
                    {el.des}
                  </p>
                </div>
