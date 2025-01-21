@@ -8,10 +8,10 @@ import { FaArrowRight } from "react-icons/fa";
 const Features = () => {
   const limit = articles.slice(0,3)
   return (
-    <section id="features" className="w-full py-20 border-b-[1px] flex flex-col items-end gap-9 border-b-black">
+    <section id="features" className="w-full py-20 border-b-[1px] flex flex-col xl:items-end gap-9 border-b-black">
       <div>
          <Title title="Features" des="Featured articles" />
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
+      <div className="grid grid-cols-1 mdl:grid-cols-1 xl:grid-cols-3 gap-6 xl:gap-20">
         {limit.map((item) => (
           <Card item={item} key={item.id} />
         ))}

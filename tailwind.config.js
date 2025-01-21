@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      screens:{
+      screens: {
         xs: "320px",
         sm: "375px",
         sml: "500px",
@@ -22,14 +22,26 @@ module.exports = {
         lightText: "#c4cfde",
         boxBg: "linear-gradient(145deg, #1e2024, #23272b)",
         designColor: "rgb(148 120 235)",
-        navtxt: "rgb(18 26 39)"
+        navtxt: "rgb(18 26 39)",
       },
       boxShadow: {
         shadowOne: "5px 5px 14px #7f6c99, -9px 13px 44px #ffffff82",
       },
-     
+      maskImage: {
+        "gradient-to-right":
+          "linear-gradient(to right, hsl(0 0% 0% / 0), hsl(0 0% 0% / 1) 10%, hsl(0 0% 0% / 1) 90%, hsl(0 0% 0% / 0))",
+      },
     },
   },
-  plugins: [],
-  important : true
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".mask-gradient-to-right": {
+          "mask-image":
+            "linear-gradient(to right, hsl(0 0% 0% / 0), hsl(0 0% 0% / 1) 5%, hsl(0 0% 0% / 1) 90%, hsl(0 0% 0% / 0))",
+        },
+      });
+    },
+  ],
+  important: true,
 };

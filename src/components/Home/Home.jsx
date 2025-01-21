@@ -10,6 +10,7 @@ import Education from "../Education/Education";
 import Certi from "../cerificates/Certi";
 import Projectshow from "../projects/ProjectsShow";
 import Awards from "../awards/Awards";
+import BookHome from "../Books/BookHome";
 
 function Home() {
   return (
@@ -19,7 +20,7 @@ function Home() {
       <Exp/>
       <Education/>
       <Features1 />
-      <Book1 />
+      <BookHome />
       <Projectshow />
       <Certi/>
       <Mediacov />

@@ -26,7 +26,7 @@ function Skill1() {
   const row2 = [aws, mongodb, sql, python, java, jquery, docker, postman];
 
   return (
-    <div className="flex items-end gap-14 flex-col" id="skills">
+    <div className="flex items-center mdl:items-end gap-14 flex-col" id="skills">
       <AppContainer className=" lg:flex mdl:w-auto mt-24">
         <Wrapper className=" overflow-hidden">
           <Title title="" des="My Skills" />
@@ -66,7 +66,7 @@ function Skill1() {
         </Wrapper>
       </AppContainer>
       <NavLink to="../skills">
-      <button class="group/button cursor-pointer w-52 relative inline-flex items-center justify-center overflow-hidden rounded-md bg-[#9478ebba] backdrop-blur-lg px-6 py-2 text-base font-semibold text-[#263d4c] font-titleFont transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-blue-600/50 border border-white/20">
+      <button class=" group/button cursor-pointer w-[95vw] md:w-52 relative inline-flex items-center justify-center overflow-hidden rounded-md bg-[#9478ebba] backdrop-blur-lg px-6 py-2 text-base font-semibold text-[#263d4c] font-titleFont transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-blue-600/50 border border-white/20">
         <span class="text-lg">All Skills</span>
         <FaArrowRight className="ml-5" />
         <div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">

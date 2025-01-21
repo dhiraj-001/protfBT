@@ -1,5 +1,4 @@
 import React from 'react';
-import { BsGithub } from 'react-icons/bs';
 import { FaGlobe } from 'react-icons/fa';
 
 const BookCard = ({ title, des, src }) => {
@@ -13,10 +12,10 @@ const BookCard = ({ title, des, src }) => {
               {title}
             </h3>
             <div className="flex gap-2">
-              
+              <a target='#' href={src}>
               <span className="text-lg ml-5 w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
                 <FaGlobe />
-              </span>
+              </span></a>
             </div>
           </div>
           <p className="text-sm tracking-wide mt-3 text-slate-600 hover:text-slate-700 duration-300">
