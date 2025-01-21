@@ -50,44 +50,23 @@ export const articles = [
   },
   {
     id: 8,
-    title: "২১শে ফেব্রুয়ারি",
-    link: "https://www.instagram.com/eshogolpokori/p/C3mC_zmLtOB/",
-    des: "ভাষা হোক নদীর কিনার\nভাষা দিয়ে জুড়বো সাঁকো,\nভাষা দিয়ে গড়ব মিনার",
+    title: "Circular Supply Chains",
+    link: "https://bhumikaquillcanvas.blogspot.com/",
+    des: "A path to waste reduction and profitability through reuse, recycling, and repurposing...",
     time: "2024"
   },
   {
     id: 9,
-    title: "Tomay Hrid Majhare Rakhbo, chere debo na",
-    link: "https://www.instagram.com/p/CzYkq4lS9FF/",
-    des: "A timeless love story of Anik and Priya, set by the Ganges...",
+    title: "Sustainability in Global Logistics",
+    link: "https://bhumikaquillcanvas.blogspot.com/",
+    des: "Balancing efficiency with environmental impact in the movement of goods...",
     time: "2024"
   },
   {
     id: 10,
-    title: "বৃষ্টি ঝমঝমিয়ে ভিজিয়ে",
-    link: "https://www.instagram.com/p/C_5q4vtvWCI/",
-    des: "A poetic reflection on rain, memories, and emotions...",
-    time: "2024"
-  },
-  {
-    id: 11,
-    title: "Coffee at 3 AM",
-    link: "https://www.instagram.com/p/C79KmOFpPwO/?img_index=1",
-    des: "Musings and memories triggered by a late-night coffee...",
-    time: "2024"
-  },
-  {
-    id: 12,
-    title: "You know you're adulting when.....",
-    link: "https://www.instagram.com/p/C2g3CrHLxzo/?img_index=2",
-    des: "",
-    time: "2024"
-  },
-  {
-    id: 13,
-    title: "To all the moments captured on your....",
-    link: "https://www.instagram.com/p/Cy8c7dySqz9/?img_index=1",
-    des: "",
+    title: "The Role of Digital Transformation in Supply Chain Resilience",
+    link: "https://bhumikaquillcanvas.blogspot.com/",
+    des: "Leveraging digital tools to improve supply chain forecasting and inventory management...",
     time: "2024"
   }
 ];

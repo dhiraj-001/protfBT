@@ -31,7 +31,7 @@ function Book1() {
           <Marquee>
             <MarqueeGroup>
               {books.map((el, index) => (
-                 <div key={index} className=" h-52 bg-opacity-20 border-2 bg-[#3665dc] border-[#91b0e68a] hover:bg-opacity-30 duration-300 rounded-lg shadow-shadowOne p-4 lgl:px-10 flex flex-col justify-start gap-5 lgl:gap-3 pt-9">
+                 <div key={index} className="w-[300px] h-52 bg-opacity-20 border-2 bg-[#3665dc] border-[#91b0e68a] hover:bg-opacity-30 duration-300 rounded-lg shadow-shadowOne p-4 lgl:px-10 flex flex-col justify-start gap-5 lgl:gap-3 pt-9">
                  <div className="flex flex-col lgl:flex-row justify-between gap-4 lgl:gap-0 lgl:items-center">
                    <div>
                      <h3 className="text-xl text-designColor md:text-2xl font-semibold group-hover:text-white duration-300">
@@ -100,7 +100,7 @@ const Note = styled.div`
 
 const Marquee = styled.div`
   display: flex;
-  width: 1200px;
+ 
   overflow: hidden;
   user-select: none;
   mask-image: linear-gradient(
