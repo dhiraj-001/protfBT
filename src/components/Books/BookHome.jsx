@@ -35,7 +35,7 @@ const BookHome = () => {
           </div>
         ))}
       </Marquee>
-      <NavLink  to="../experience">
+      <NavLink  to="../books">
            <button class="group/button cursor-pointer w-96 relative inline-flex items-center justify-center overflow-hidden rounded-md bg-[#9478ebba] backdrop-blur-lg px-6 py-2 text-base font-semibold text-[#263d4c] font-titleFont transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-blue-600/50 border border-white/20">
           <span class="text-lg">All Books</span>
           <FaArrowRight className="ml-5" />
