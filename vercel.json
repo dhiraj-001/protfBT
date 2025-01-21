@@ -1,6 +1,16 @@
 {
   "routes": [
-    { "src": "/about", "dest": "/" }
+    { "src": "/about", "dest": "/" },
+    { "src": "/skills", "dest": "/" },
+    { "src": "/experience", "dest": "/" },
+    { "src": "/education", "dest": "/" },
+    { "src": "/features", "dest": "/" },
+    { "src": "/books", "dest": "/" },
+    { "src": "/projects", "dest": "/" },
+    { "src": "/certifications", "dest": "/" },
+    { "src": "/media-coverage", "dest": "/" },
+    { "src": "/awards", "dest": "/" },
+    { "src": "/contact", "dest": "/" }
 
   ]
   }
