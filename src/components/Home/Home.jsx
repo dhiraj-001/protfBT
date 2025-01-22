@@ -24,7 +24,7 @@ function Home() {
       <Projectshow />
       <Certi/>
       <Mediacov />
-      <Awards/>
+      {/* <Awards/> */}
       <Contact />
     </div>
   );

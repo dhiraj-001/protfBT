@@ -1,97 +1,28 @@
 import React from "react";
-import "./Awards.css"; // Assuming you have a CSS file for styling
-import img from "../../assets/images/pngwing1.com.png"
-const AwardsCard = () => {
+import { BsArrowBarRight } from "react-icons/bs";
+
+function AwardsCard({title, des, link , time}) {
   return (
-    <div
-      id="curve"
-      className="card"
-      style={{ backgroundImage: `url("${img}")` }}
-    >
-      <div className="footer">
-        <div className="connections">
-          <div className="connection facebook">
-            <div className="icon"></div>
-          </div>
-        </div>
-        <svg id="curve">
-         
-          <rect
-            id="dummyRect"
-            x="0"
-            y="0"
-            height="450"
-            width="400"
-            fill="transparent"
-          />
-          <animate
-            xlinkHref="#p"
-            attributeName="d"
-            to="M0,50 Q80,100 400,50 V150 H0 V50"
-            fill="freeze"
-            begin="dummyRect.mouseover"
-            end="dummyRect.mouseout"
-            dur="0.1s"
-            id="bounce1"
-          />
-          <animate
-            xlinkHref="#p"
-            attributeName="d"
-            to="M0,50 Q80,0 400,50 V150 H0 V50"
-            fill="freeze"
-            begin="bounce1.end"
-            end="dummyRect.mouseout"
-            dur="0.15s"
-            id="bounce2"
-          />
-          <animate
-            xlinkHref="#p"
-            attributeName="d"
-            to="M0,50 Q80,80 400,50 V150 H0 V50"
-            fill="freeze"
-            begin="bounce2.end"
-            end="dummyRect.mouseout"
-            dur="0.15s"
-            id="bounce3"
-          />
-          <animate
-            xlinkHref="#p"
-            attributeName="d"
-            to="M0,50 Q80,45 400,50 V150 H0 V50"
-            fill="freeze"
-            begin="bounce3.end"
-            end="dummyRect.mouseout"
-            dur="0.1s"
-            id="bounce4"
-          />
-          <animate
-            xlinkHref="#p"
-            attributeName="d"
-            to="M0,50 Q80,50 400,50 V150 H0 V50"
-            fill="freeze"
-            begin="bounce4.end"
-            end="dummyRect.mouseout"
-            dur="0.05s"
-            id="bounce5"
-          />
-          <animate
-            xlinkHref="#p"
-            attributeName="d"
-            to="M0,200 Q80,100 400,200 V150 H0 V50"
-            fill="freeze"
-            begin="dummyRect.mouseout"
-            dur="0.15s"
-            id="bounceOut"
-          />
-        </svg>
-        <div className="info">
-          <div className="name">Filan Fisteku</div>
-          <div className="job">Architect Manager</div>
-        </div>
+    <div className="bg-[#d5a3e88b] transition duration-300 ease-in-out transform rounded-2xl p-6 flex flex-col items-start gap-2 md:w-96 justify-around w-full h-72 border-[#ffffff00] border-[1px] shadow-[#3673d6ac] shadow-2xl hover:bg-[#3f7ef2a6]">
+      <div className="title text-2xl font-titleFont font-bold text-[#050c94]">
+        {title}
       </div>
-      <div className="card-blur"></div>
+      <div className="text-[#091c75c8] font-titleFont">{time}</div>
+      <div className="description text-[#000000] mb-5 font-titleFont">
+        {des}
+      </div>
+      <a
+        href={link}
+        className="border-black cursor-pointer flex flex-row align-middle items-center gap-2 text-lg w-max px-5 py-2 rounded-3xl transition duration-300 ease-in-out transform hover:scale-105 bg-[#d8ea65ad]  hover:bg-[#7fed54ad] shadow-sm  shadow-[#2a282888]"
+    
+      >
+        <span className="text-[#430453] hidden sm:block">
+          View Certificate{" "}
+        </span>
+        <BsArrowBarRight className="text-[#430453]" />
+      </a>
     </div>
   );
-};
+}
 
 export default AwardsCard;

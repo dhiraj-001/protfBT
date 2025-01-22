@@ -1,145 +1,20 @@
 
-
-
-.card {
-    position: relative;
-    border-radius: 8px;
-    height: 400px;
-    width: 350px;
-    margin: auto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 0 0 80px -10px rgba(76, 58, 84, 0.666);
-    overflow: hidden;
-}
-@media only screen and (max-width: 600px) {
-  .card {
-    height: 360px;
-    width: 320px;
-  }
-}
-.card-blur {
-    position: absolute;
-    height: 100%;
-    width: calc(100% + 1px);
-    background-color: black;
-    opacity: 0;
-    transition: opacity 0.15s ease-in;
+.swiper {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
 }
 
-.card:hover .card-blur {
-    opacity: 0.6;
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
 }
 
-.footer {
-    z-index: 1;
-    position: absolute;
-    height: 80px;
-    width: 100%;
-    bottom: 0;
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }
-
-svg#curve {
-    position: absolute;
-    fill: white;
-    left: 0;
-    bottom: 0;
-    width: 400px;
-    height: 450px;
-}
-
-.connections {
-    height: 80px;
-    width: 400px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 100px;
-    margin: auto;
-}
-
-.connection {
-    height: 25px;
-    width: 25px;
-    border-radius: 100%;
-    background-color: white;
-    display: inline-block;
-    padding: 5px;
-    margin-right: 25px;
-    transform: translateY(200px);
-    
-    transition: transform 1s cubic-bezier(.46, 1.48, .18, .81);
-}
-
-.card:hover .connection {
-    transform: translateY(0px);
-}
-
-.info {
-	font-family: Inconsolata;
-    padding-left: 20px;
-    transform: translateY(250px);
-    
-    transition: transform 1s cubic-bezier(.31,1.21,.64,1.02);
-}
-
-.card:hover .info {
-    transform: translateY(0px);
-}
-
-.name {
-    font-weight: bolder;
-    padding-top: 5px;
-}
-
-.job {
-    margin-top: 10px;
-}
-
-.connection.facebook {
-    height: 35px;
-    width: 35px;
-    margin-left: 20px;
-    padding: 0px;
-    border-radius: 100%;
-    overflow: hidden;
-}
-
-.connection.twitter {
-    transition-delay: 0.06s;
-}
-
-.connection.behance {
-    transition-delay: 0.12s;
-}
-
-.connection.facebook .icon {
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-color: black;
-}
-
-.connection.twitter .icon {
-    height: 18px;
-    width: 18px;
-    margin-top: 4px;
-    margin-left: 4px;
-    background-position: center;
-    background-size: cover;
-}
-
-.connection.behance .icon {
-    height: 18px;
-    width: 18px;
-    margin-top: 3px;
-    margin-left: 4px;
-    background-position: center;
-    background-size: cover;
-}
-
-
-
-
